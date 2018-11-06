@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.davyson.easyntaste.DetalheActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgReceita"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ts"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/detalheTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bolo blabla bla bla"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_below="@+id/imgReceita"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/ingredientes"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detalheTitulo"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+
+
+
+
+</RelativeLayout>
